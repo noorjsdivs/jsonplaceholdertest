@@ -1,10 +1,9 @@
 import Container from "@/components/Container";
 import Post from "@/components/Post";
 import Title from "@/components/Title";
-import Link from "next/link";
 
 const getData = async () => {
-  const res = await fetch("http://localhost:3000/api/posts");
+  const res = await fetch("https://jsonplaceholder.reactbd.com/api/posts");
 
   if (!res.ok) {
     throw new Error("Failed to fetch data");

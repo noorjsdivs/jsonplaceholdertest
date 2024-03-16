@@ -3,7 +3,7 @@ import Products from "@/components/Products";
 import Title from "@/components/Title";
 
 const getProducts = async () => {
-  const res = await fetch("http://localhost:3000/api/products");
+  const res = await fetch("https://fakestoreapiserver.reactbd.com/nextamazon");
   if (!res?.ok) {
     throw new Error("Failed to fetch Products Data");
   }
