@@ -3,7 +3,7 @@ import Post from "@/components/Post";
 import Title from "@/components/Title";
 
 const getData = async () => {
-  const res = await fetch("https://jsonplaceholder.reactbd.com/api/posts");
+  const res = await fetch("https://jsonplaceholdertest.vercel.app/api/posts");
 
   if (!res.ok) {
     throw new Error("Failed to fetch data");
